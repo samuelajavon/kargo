@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    
+    /* Chemin vers ton image */
+    background-image: url('back.jpg');
+    
+    /* Assure-toi que l'image couvre toute la page */
+    background-size: cover;
+     height: 100vh;
+    /* Centrer l'image dans la page */
+    background-position: center;
+    
+    /* Empêcher le défilement de l'image */
+    background-attachment: fixed;
+    
+    /* Optionnel : ajouter une couleur de fond si l'image ne couvre pas toute la page */
+    background-color: #f0f0f0;
+}
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
+  }
+    header {
+       width: 100%;
+      height: 75px;
+      background-color: rgb(255, 255, 255);
+      padding: 1rem 2rem;
+      border-bottom :0.5px solid #272525;
+  
+    }
+    #logo {
+      height:77px ;
+      align-self: center;
+      
+    }
+    #logo img{
+      object-fit: cover;
+      width: 130px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .container{
+      
+
+        outline: rgb(4, 0, 255) 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 100%; /
+
+    }
+    nav ul li{
+      display: none;
+    }
+    
+  /* Assure-toi que le conteneur du formulaire prend toute la largeur disponible */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Ajuste cette valeur selon la largeur maximale souhaitée */
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 20px; /* Optionnel : ajoute un peu d'espace autour du formulaire */
+}
+
+/* Style pour l'iframe pour qu'il soit responsive */
+
+/* Ajuste la hauteur de l'iframe pour qu'il s'adapte correctement à la hauteur du conteneur */
+@media (max-width: 768px) {
+    .responsive-iframe {
+        height: 60vh; /* Ajuste la hauteur pour les écrans plus petits */
+    }
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
